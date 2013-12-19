@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+{% stylesheets 'bundles/fsiweb/css/style.css' filter='cssrewrite' %}
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-offset-4 col-lg-4">
+        <div id="demo-list" class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title">{{ 'index.panel.title'|trans({}, 'FSiWebBundle') }}</h1>
+            </div>
+            <div class="panel-body">
+                <a href="{{ url('fsi_admin') }}" class="btn btn-success btn-lg btn-block">{{ 'index.panel.admin_budnle'|trans({}, 'FSiWebBundle') }}</a>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p>
+                    {{ 'index.reset_info'|trans({}, 'FSiWebBundle') }}<br/>
+                    {{ 'index.next_reset'|trans({}, 'FSiWebBundle') }} <span id="reset-time"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script>
+    $( document ).ready(function() {
+        var mins = {{ 60 - "now"|date('i') }},
+                secs = mins * 60,
+                currentSeconds = 0,
+                currentMinutes = 0,
+                decrementFunction = function() {
+                    currentMinutes = Math.floor(secs / 60);
+                    currentSeconds = secs % 60;
+                    if(currentSeconds <= 9) {
+                        currentSeconds = "0" + currentSeconds;
+                    }
+                    secs--;
+                    $("#reset-time").text(currentMinutes + ":" + currentSeconds);
+
+                    if(secs !== -1) {
+                        setTimeout(decrementFunction, 1000);
+                    } else {
+                        location.reload();
+                    }
+                }
+
+        setTimeout(decrementFunction, 1000);
+    });
+</script>
+{% endblock %}

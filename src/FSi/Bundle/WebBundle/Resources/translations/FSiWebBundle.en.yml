@@ -1,0 +1,6 @@
+index:
+  reset_info: Demo is reset every hour.
+  next_reset: Time to next reset:
+  panel:
+    title: Demo list
+    admin_budnle: FSiAdminBundle

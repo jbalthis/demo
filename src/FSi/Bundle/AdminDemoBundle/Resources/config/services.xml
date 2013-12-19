@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="admin_demo_bundle.admin.news" class="FSi\Bundle\AdminDemoBundle\Admin\News">
+            <tag name="admin.element" />
+        </service>
+        <service id="admin_demo_bundle.admin.home_page" class="FSi\Bundle\AdminDemoBundle\Admin\HomePage">
+            <tag name="admin.element" alias="demo.admin.page_structure" />
+        </service>
+
+        <service id="admin_demo.listener.doctrine_change_password_listener"
+                 class="FSi\Bundle\AdminDemoBundle\EventListener\DoctrineChangePasswordListener">
+            <argument type="service" id="doctrine" />
+            <argument type="service" id="security.encoder_factory" />
+            <tag name="kernel.event_listener" event="admin.security.change_password"
+                 method="onChangePassword" piriority="-255" />
+        </service>
+    </services>
+</container>

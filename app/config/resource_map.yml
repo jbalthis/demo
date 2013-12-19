@@ -1,0 +1,12 @@
+resources:
+  type: group
+  home_page:
+    type: group
+    header:
+      type: text
+      form_options:
+          label: demo.admin.homepage.header
+    welcome_text:
+      type: fsi_ckeditor
+      form_options:
+          label: demo.admin.homepage.welcome

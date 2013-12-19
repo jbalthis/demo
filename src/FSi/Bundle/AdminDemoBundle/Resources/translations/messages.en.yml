@@ -1,0 +1,25 @@
+demo:
+  admin:
+    page_structure: Structure
+    homepage:
+      name: Home
+      header: Header
+      welcome: Welcome
+    news:
+      name: News
+      form:
+        photo: Photo (600x200px)
+      list:
+        title: Title
+        created_at: Created at from
+        created_at_to: to
+        visible: Visible
+        actions: Actions
+        creator_email: Creator
+    home_page:
+      name: Home page
+      form:
+        header: Header
+        content: Content
+    about_us_page:
+      name: About us page
