@@ -5,8 +5,18 @@ resources:
     header:
       type: text
       form_options:
-          label: demo.admin.homepage.header
+          label: demo.admin.home_page.header
     welcome_text:
       type: fsi_ckeditor
       form_options:
-          label: demo.admin.homepage.welcome
+          label: demo.admin.home_page.welcome
+  about_us_page:
+    type: group
+    photo:
+      type: fsi_file
+      form_options:
+        label: demo.admin.about_us_page.photo
+    content:
+     type: fsi_ckeditor
+     form_options:
+         label: demo.admin.about_us_page.content

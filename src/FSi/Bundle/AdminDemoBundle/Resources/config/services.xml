@@ -11,6 +11,9 @@
         <service id="admin_demo_bundle.admin.home_page" class="FSi\Bundle\AdminDemoBundle\Admin\HomePage">
             <tag name="admin.element" alias="demo.admin.page_structure" />
         </service>
+        <service id="admin_demo_bundle.admin.about_us_page" class="FSi\Bundle\AdminDemoBundle\Admin\AboutUsPage">
+            <tag name="admin.element" alias="demo.admin.page_structure" />
+        </service>
 
         <service id="admin_demo.listener.doctrine_change_password_listener"
                  class="FSi\Bundle\AdminDemoBundle\EventListener\DoctrineChangePasswordListener">

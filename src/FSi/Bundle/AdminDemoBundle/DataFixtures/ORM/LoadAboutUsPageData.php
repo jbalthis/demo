@@ -7,8 +7,9 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class LoadResourceData implements FixtureInterface, ContainerAwareInterface
+class LoadAboutUsPageData implements FixtureInterface, ContainerAwareInterface
 {
     /**
      * @var ContainerInterface
@@ -31,14 +32,17 @@ class LoadResourceData implements FixtureInterface, ContainerAwareInterface
         $generator = Factory::create();
 
         $resource = $this->container->get('fsi_resource_repository.entity.repository')
-            ->get('resources.home_page.header');
+            ->get('resources.about_us_page.photo');
 
-        $resource->setTextValue($generator->text(150));
+        $image = $generator->image(sys_get_temp_dir(), 800, 600);
+        $resource->setFileValue(new UploadedFile($image, 'image.jpg', null, null, null, true));
         $manager->persist($resource);
         $manager->flush();
 
+        unlink($image);
+
         $resource = $this->container->get('fsi_resource_repository.entity.repository')
-            ->get('resources.home_page.welcome_text');
+            ->get('resources.about_us_page.content');
 
         $resource->setTextValue($generator->text(1000));
         $manager->persist($resource);
