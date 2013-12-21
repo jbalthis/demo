@@ -1,10 +1,6 @@
 demo:
   admin:
     page_structure: Structure
-    homepage:
-      name: Home
-      header: Header
-      welcome: Welcome
     news:
       name: News
       form:
@@ -18,8 +14,9 @@ demo:
         creator_email: Creator
     home_page:
       name: Home page
-      form:
-        header: Header
-        content: Content
+      header: Header
+      welcome: Welcome
     about_us_page:
       name: About us page
+      photo: Photo
+      content: Page content

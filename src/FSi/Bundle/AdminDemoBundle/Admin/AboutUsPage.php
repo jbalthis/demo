@@ -4,21 +4,21 @@ namespace FSi\Bundle\AdminDemoBundle\Admin;
 
 use FSi\Bundle\AdminBundle\Admin\Doctrine\ResourceElement;
 
-class HomePage extends ResourceElement
+class AboutUsPage extends ResourceElement
 {
     public function getId()
     {
-        return 'home_page';
+        return 'about_us_page';
     }
 
     public function getKey()
     {
-        return 'resources.home_page';
+        return 'resources.about_us_page';
     }
 
     public function getName()
     {
-        return 'demo.admin.home_page.name';
+        return 'demo.admin.about_us_page.name';
     }
 
     public function getClassName()
