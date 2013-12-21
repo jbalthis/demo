@@ -112,6 +112,7 @@ class News extends CRUDElement
         ));
         $builder->add('visible', 'checkbox', array(
             'label' => 'demo.admin.news.list.visible',
+            'required' => false
         ));
         $builder->add('creator_email', 'email', array(
             'label' => 'demo.admin.news.list.creator_email'

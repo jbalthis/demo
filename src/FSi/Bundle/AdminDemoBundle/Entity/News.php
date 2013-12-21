@@ -22,6 +22,10 @@ class News
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\Length(
+     *      min = "5",
+     *      max = "100",
+     * )
      */
     protected $title;
 
@@ -32,11 +36,13 @@ class News
 
     /**
      * @ORM\Column(type="datetime", name="created_at")
+     * @Assert\DateTime()
      */
     protected $createdAt;
 
     /**
      * @ORM\Column(type="text", name="creator_email")
+     * @Assert\Email()
      */
     protected $creatorEmail;
 
