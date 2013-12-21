@@ -32,7 +32,7 @@ class LoadNewsData implements FixtureInterface, ContainerAwareInterface
     public function load(ObjectManager $manager)
     {
         $generator = Factory::create();
-        for ($i = 0; $i < 1; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $imagePath = $generator->image(sys_get_temp_dir(), 800, 600);
             $news = new News();
             $news->setCreatedAt($generator->dateTime());
