@@ -24,7 +24,7 @@ class News
      * @ORM\Column(type="string", length=100)
      * @Assert\Length(
      *      min = "5",
-     *      max = "100",
+     *      max = "100"
      * )
      */
     protected $title;
