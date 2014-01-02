@@ -1,0 +1,29 @@
+fields:
+  title:
+    type: text
+    comparison: like
+    options:
+      sortable: false
+      form_options:
+        label: demo.admin.news.list.title
+  created_at:
+    type: date
+    comparison: between
+    options:
+      field: createdAt
+      sortable: true
+      form_options:
+        label: demo.admin.news.list.created_at
+      form_from_options:
+        widget: single_text
+        label: false
+      form_to_options:
+        widget: single_text
+        label: demo.admin.news.list.created_at_to
+  visible:
+    type: boolean
+    comparison: eq
+    options:
+      sortable: false
+      form_options:
+        label: demo.admin.news.list.visible

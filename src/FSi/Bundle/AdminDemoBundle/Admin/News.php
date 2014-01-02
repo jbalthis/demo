@@ -28,6 +28,11 @@ class News extends CRUDElement
     {
         /* @var $datagrid \FSi\Component\DataGrid\DataGrid */
         $datagrid = $factory->createDataGrid('news');
+
+        /*
+        Looking for datagrid configuration?
+        /src/FSi/Bundle/AdminDemoBundle/Resources/config/datagrid/news.yml
+
         $datagrid->addColumn('title', 'text', array(
             'label' => 'demo.admin.news.list.title',
             'editable' => true
@@ -52,6 +57,7 @@ class News extends CRUDElement
                 ),
             )
         ));
+        */
 
         return $datagrid;
     }
@@ -59,7 +65,14 @@ class News extends CRUDElement
     protected function initDataSource(DataSourceFactoryInterface $factory)
     {
         /* @var $datasource \FSi\Component\DataSource\DataSource */
-        $datasource = $factory->createDataSource('doctrine', array('entity' => $this->getClassName()), 'news');
+        $datasource = $factory->createDataSource('doctrine', array(
+            'entity' => $this->getClassName()
+        ), 'news');
+
+        /*
+        Looking for datasource configuration?
+        /src/FSi/Bundle/AdminDemoBundle/Resources/config/datasource/news.yml
+
         $datasource->addField('title', 'text', 'like', array(
             'sortable' => false,
             'form_options' => array(
@@ -87,6 +100,7 @@ class News extends CRUDElement
                 'label' => 'demo.admin.news.list.visible',
             )
         ));
+        */
 
         $datasource->setMaxResults(10);
 
