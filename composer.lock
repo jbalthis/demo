@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fd0cf4fbf70db27b13ef594ae9fde466",
+    "hash": "e1c07de61d39a002e47bf0f5dc874d6f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1048,17 +1048,17 @@
         },
         {
             "name": "fsi/datagrid-bundle",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "target-dir": "FSi/Bundle/DataGridBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/datagrid-bundle.git",
-                "reference": "6ec2e9400f0fda3f9a18820ab32533253bfb2eed"
+                "reference": "8d166dacdcaede887f8460d3e3fcf3d06bcfcee4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/datagrid-bundle/zipball/6ec2e9400f0fda3f9a18820ab32533253bfb2eed",
-                "reference": "6ec2e9400f0fda3f9a18820ab32533253bfb2eed",
+                "url": "https://api.github.com/repos/fsi-open/datagrid-bundle/zipball/8d166dacdcaede887f8460d3e3fcf3d06bcfcee4",
+                "reference": "8d166dacdcaede887f8460d3e3fcf3d06bcfcee4",
                 "shasum": ""
             },
             "require": {
@@ -1103,7 +1103,7 @@
                 "fsi",
                 "symfony"
             ],
-            "time": "2013-07-15 19:00:26"
+            "time": "2013-12-09 12:27:36"
         },
         {
             "name": "fsi/datasource",
@@ -1169,23 +1169,24 @@
         },
         {
             "name": "fsi/datasource-bundle",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "target-dir": "FSi/Bundle/DataSourceBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/datasource-bundle.git",
-                "reference": "7e3b9b46dd5f245a42447a8f785bdeddd336b156"
+                "reference": "5681fda2cee6c398682bc0caa1d406db9e3f652a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/datasource-bundle/zipball/7e3b9b46dd5f245a42447a8f785bdeddd336b156",
-                "reference": "7e3b9b46dd5f245a42447a8f785bdeddd336b156",
+                "url": "https://api.github.com/repos/fsi-open/datasource-bundle/zipball/5681fda2cee6c398682bc0caa1d406db9e3f652a",
+                "reference": "5681fda2cee6c398682bc0caa1d406db9e3f652a",
                 "shasum": ""
             },
             "require": {
                 "fsi/datasource": "1.2.*",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.2",
+                "symfony/yaml": "~2.2",
                 "twig/twig": "~1.2"
             },
             "require-dev": {
@@ -1221,7 +1222,7 @@
                 "fsi",
                 "symfony"
             ],
-            "time": "2013-11-15 11:55:32"
+            "time": "2013-12-09 12:43:59"
         },
         {
             "name": "fsi/doctrine-extensions",

@@ -1,0 +1,28 @@
+columns:
+  title:
+    type: text
+    options:
+      label: demo.admin.news.list.title
+      editable: true
+  created_at:
+    type: datetime
+    options:
+      label: demo.admin.news.list.created_at
+  visible:
+    type: boolean
+    options:
+      label: demo.admin.news.list.visible
+  creator_email:
+    type: text
+    options:
+      label: demo.admin.news.list.creator_email
+  actions:
+    type: action
+    options:
+      label: demo.admin.news.list.actions
+      field_mapping: ['id']
+      actions:
+        edit:
+          route_name: fsi_admin_crud_edit
+          additional_parameters: {'element' : 'news'}
+          parameters_field_mapping: {'id' : 'id'}
