@@ -73,6 +73,9 @@ fsi_doctrine_extensions:
         default:
             uploadable: true
 
+fsi_admin:
+    display_language_switch: true
+
 fos_user:
     db_driver: orm
     firewall_name: main

@@ -799,17 +799,17 @@
         },
         {
             "name": "fsi/admin-bundle",
-            "version": "v1.0.2",
+            "version": "v1.0.4",
             "target-dir": "FSi/Bundle/AdminBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/admin-bundle.git",
-                "reference": "f81403bb4d803171434784da80d3e1c41db0de7e"
+                "reference": "c83ab3022bfba72788ee0820a2f1aa3ab8ae8560"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/admin-bundle/zipball/f81403bb4d803171434784da80d3e1c41db0de7e",
-                "reference": "f81403bb4d803171434784da80d3e1c41db0de7e",
+                "url": "https://api.github.com/repos/fsi-open/admin-bundle/zipball/c83ab3022bfba72788ee0820a2f1aa3ab8ae8560",
+                "reference": "c83ab3022bfba72788ee0820a2f1aa3ab8ae8560",
                 "shasum": ""
             },
             "require": {
@@ -869,7 +869,7 @@
                 "fsi",
                 "panel"
             ],
-            "time": "2013-12-04 14:24:38"
+            "time": "2014-01-03 12:28:57"
         },
         {
             "name": "fsi/admin-security-bundle",
@@ -878,12 +878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/admin-security-bundle.git",
-                "reference": "2305831b181664371a57e2a671559fb181095d06"
+                "reference": "d12cd99562538d890e4efdccb1ecbd20ddd33dd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/admin-security-bundle/zipball/2305831b181664371a57e2a671559fb181095d06",
-                "reference": "2305831b181664371a57e2a671559fb181095d06",
+                "url": "https://api.github.com/repos/fsi-open/admin-security-bundle/zipball/d12cd99562538d890e4efdccb1ecbd20ddd33dd3",
+                "reference": "d12cd99562538d890e4efdccb1ecbd20ddd33dd3",
                 "shasum": ""
             },
             "require": {
@@ -935,7 +935,7 @@
                 "fsi",
                 "panel"
             ],
-            "time": "2013-12-17 09:56:33"
+            "time": "2014-01-03 18:39:19"
         },
         {
             "name": "fsi/data-indexer",
@@ -1348,17 +1348,17 @@
         },
         {
             "name": "fsi/form-extensions-bundle",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "target-dir": "FSi/Bundle/FormExtensionsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/form-extensions-bundle.git",
-                "reference": "c56cabdca7bc435493bec7aec9a2462b7efb35d0"
+                "reference": "e594bc9c78a0d0ebd2af53ab111b7c09a7c65670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/form-extensions-bundle/zipball/c56cabdca7bc435493bec7aec9a2462b7efb35d0",
-                "reference": "c56cabdca7bc435493bec7aec9a2462b7efb35d0",
+                "url": "https://api.github.com/repos/fsi-open/form-extensions-bundle/zipball/e594bc9c78a0d0ebd2af53ab111b7c09a7c65670",
+                "reference": "e594bc9c78a0d0ebd2af53ab111b7c09a7c65670",
                 "shasum": ""
             },
             "require": {
@@ -1410,7 +1410,7 @@
                 "fsi",
                 "symfony"
             ],
-            "time": "2013-12-11 15:17:37"
+            "time": "2014-01-02 09:26:36"
         },
         {
             "name": "fsi/metadata",
