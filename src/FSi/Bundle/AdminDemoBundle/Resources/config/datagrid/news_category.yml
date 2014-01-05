@@ -1,0 +1,11 @@
+columns:
+  name:
+    type: text
+    options:
+      label: demo.admin.news_category.list.name
+      editable: true
+  news_count:
+    type: number
+    options:
+      label: demo.admin.news_category.list.news_count
+      field_mapping: ['newsCount']

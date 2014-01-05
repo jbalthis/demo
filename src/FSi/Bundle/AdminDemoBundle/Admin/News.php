@@ -117,6 +117,11 @@ class News extends CRUDElement
         $builder->add('title', 'text', array(
             'label' => 'demo.admin.news.list.title',
         ));
+        $builder->add('category', 'entity', array(
+            'class' => 'FSi\Bundle\AdminDemoBundle\Entity\NewsCategory',
+            'label' => 'demo.admin.news.list.category',
+            'empty_value' => 'demo.admin.news.form.category_empty_value'
+        ));
         $builder->add('photo', 'fsi_file', array(
             'label' => 'demo.admin.news.form.photo',
         ));
