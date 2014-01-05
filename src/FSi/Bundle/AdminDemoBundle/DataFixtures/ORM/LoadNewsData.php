@@ -3,15 +3,15 @@
 namespace FSi\Bundle\AdminDemoBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Faker\Factory;
-use Faker\ORM\Doctrine\Populator;
 use FSi\Bundle\AdminDemoBundle\Entity\News;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class LoadNewsData implements FixtureInterface, ContainerAwareInterface
+class LoadNewsData implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface
 {
     /**
      * @var ContainerInterface
@@ -48,11 +48,27 @@ class LoadNewsData implements FixtureInterface, ContainerAwareInterface
                 true
             ));
 
+            $categories = $manager->getRepository('FSi\\Bundle\\AdminDemoBundle\\Entity\\NewsCategory')
+                ->findAll();
+            shuffle($categories);
+            $category = current($categories);
+
+            $news->setCategory($category);
+
             $manager->persist($news);
             $manager->flush();
             $manager->clear();
-
             unlink($imagePath);
         }
+    }
+
+    /**
+     * Get the order of this fixture
+     *
+     * @return integer
+     */
+    function getOrder()
+    {
+        return 2;
     }
 }

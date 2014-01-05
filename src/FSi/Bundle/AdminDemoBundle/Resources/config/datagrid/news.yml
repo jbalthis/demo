@@ -4,6 +4,20 @@ columns:
     options:
       label: demo.admin.news.list.title
       editable: true
+  category:
+    type: entity
+    options:
+      label: demo.admin.news.list.category
+      relation_field: category
+      field_mapping: ['name']
+      value_format: %s
+      form_type:
+        category: entity
+      form_options:
+        category:
+          class: FSi\Bundle\AdminDemoBundle\Entity\NewsCategory
+          empty_value: demo.admin.news.form.category_empty_value
+      editable: true
   created_at:
     type: datetime
     options:

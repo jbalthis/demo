@@ -12,6 +12,13 @@ demo:
         visible: Widoczny
         actions: Akcje
         creator_email: Twórca
+    news_category:
+      name: Kategorie Aktualności
+      form:
+        description: Opis
+      list:
+        name: Nazwa
+        news_count: Ilość newsów
     home_page:
       name: Strona główna
       header: Nagłówek

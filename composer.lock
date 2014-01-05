@@ -878,12 +878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/admin-security-bundle.git",
-                "reference": "d12cd99562538d890e4efdccb1ecbd20ddd33dd3"
+                "reference": "249ed85d4425a87909a4ddf822c524cfe3026846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/admin-security-bundle/zipball/d12cd99562538d890e4efdccb1ecbd20ddd33dd3",
-                "reference": "d12cd99562538d890e4efdccb1ecbd20ddd33dd3",
+                "url": "https://api.github.com/repos/fsi-open/admin-security-bundle/zipball/249ed85d4425a87909a4ddf822c524cfe3026846",
+                "reference": "249ed85d4425a87909a4ddf822c524cfe3026846",
                 "shasum": ""
             },
             "require": {
@@ -895,7 +895,7 @@
                 "symfony/validator": "~2.3"
             },
             "require-dev": {
-                "behat/behat": "*@stable",
+                "behat/behat": "2.4.*",
                 "behat/mink-browserkit-driver": "*",
                 "behat/mink-extension": "*",
                 "behat/symfony2-extension": "*@stable",
@@ -935,7 +935,7 @@
                 "fsi",
                 "panel"
             ],
-            "time": "2014-01-03 18:39:19"
+            "time": "2014-01-05 13:28:49"
         },
         {
             "name": "fsi/data-indexer",

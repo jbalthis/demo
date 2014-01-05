@@ -61,6 +61,13 @@ class News
     protected $photo;
 
     /**
+     * @ORM\ManyToOne(targetEntity="NewsCategory", inversedBy="news")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     * @Assert\NotNull()
+     */
+    protected $category;
+
+    /**
      * @return mixed
      */
     public function getId()
@@ -171,5 +178,21 @@ class News
     public function getPhotoKey()
     {
         return $this->photoKey;
+    }
+
+    /**
+     * @param NewsCategory $category
+     */
+    public function setCategory(NewsCategory $category)
+    {
+        $this->category = $category;
+    }
+
+    /**
+     * @return NewsCategory
+     */
+    public function getCategory()
+    {
+        return $this->category;
     }
 }
