@@ -5,8 +5,10 @@ demo:
       name: Aktualności
       form:
         photo: Zdjęcie (600x200px)
+        category_empty_value: Choose category
       list:
         title: Tytuł
+        category: Category
         created_at: Utworzony od
         created_at_to: do
         visible: Widoczny
