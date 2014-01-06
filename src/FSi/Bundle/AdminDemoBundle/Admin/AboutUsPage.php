@@ -3,9 +3,16 @@
 namespace FSi\Bundle\AdminDemoBundle\Admin;
 
 use FSi\Bundle\AdminBundle\Admin\Doctrine\ResourceElement;
+use FSi\Bundle\AdminSecurityBundle\Admin\SecuredElementInterface;
+use Symfony\Component\Security\Core\SecurityContextInterface;
 
-class AboutUsPage extends ResourceElement
+class AboutUsPage extends ResourceElement implements SecuredElementInterface
 {
+    public function isAllowed(SecurityContextInterface $securityContext)
+    {
+        return $securityContext->isGranted('ROLE_REDACTOR');
+    }
+
     public function getId()
     {
         return 'about_us_page';
