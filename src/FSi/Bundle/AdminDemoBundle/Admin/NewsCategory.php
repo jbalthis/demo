@@ -3,12 +3,19 @@
 namespace FSi\Bundle\AdminDemoBundle\Admin;
 
 use FSi\Bundle\AdminBundle\Admin\Doctrine\CRUDElement;
+use FSi\Bundle\AdminSecurityBundle\Admin\SecuredElementInterface;
 use FSi\Component\DataGrid\DataGridFactoryInterface;
 use FSi\Component\DataSource\DataSourceFactoryInterface;
 use Symfony\Component\Form\FormFactoryInterface;
+use Symfony\Component\Security\Core\SecurityContextInterface;
 
-class NewsCategory extends CRUDElement
+class NewsCategory extends CRUDElement implements SecuredElementInterface
 {
+    public function isAllowed(SecurityContextInterface $securityContext)
+    {
+        return $securityContext->isGranted('ROLE_ADMIN');
+    }
+
     public function getId()
     {
         return 'news_category';
@@ -80,7 +87,6 @@ class NewsCategory extends CRUDElement
 
     protected function initForm(FormFactoryInterface $factory, $data = null)
     {
-
         $builder = $factory->createNamedBuilder('news_category', 'form', $data, array(
             'data_class' => $this->getClassName()
         ));
