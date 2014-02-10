@@ -2,7 +2,7 @@
 
 namespace FSi\Bundle\AdminDemoBundle\Admin;
 
-use FSi\Bundle\AdminBundle\Admin\Doctrine\ResourceElement;
+use FSi\Bundle\AdminBundle\Doctrine\Admin\ResourceElement;
 use FSi\Bundle\AdminSecurityBundle\Admin\SecuredElementInterface;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 
