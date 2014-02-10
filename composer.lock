@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e1c07de61d39a002e47bf0f5dc874d6f",
+    "hash": "6e04ad9558279bc5b14044b985a1e012",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -153,16 +153,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.1",
+            "version": "v1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b"
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/560f29c39cfcfbcd210e5d549d993a39d898b04b",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/b99c5c46c87126201899afe88ec490a25eedd6a2",
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2",
                 "shasum": ""
             },
             "require": {
@@ -171,7 +171,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -185,7 +185,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -217,7 +217,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2013-03-07 12:15:54"
+            "time": "2014-02-03 23:07:43"
         },
         {
             "name": "doctrine/common",
@@ -421,25 +421,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "c65e5a21d1db794511d11fe28918f41bd6072f8f"
+                "reference": "e84e0229bae89a57106abf17753e351e9e16874a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/c65e5a21d1db794511d11fe28918f41bd6072f8f",
-                "reference": "c65e5a21d1db794511d11fe28918f41bd6072f8f",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/e84e0229bae89a57106abf17753e351e9e16874a",
+                "reference": "e84e0229bae89a57106abf17753e351e9e16874a",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": ">=2.2,<2.6-dev",
+                "doctrine/dbal": ">=2.3,<2.6-dev",
                 "jdorn/sql-formatter": "~1.1",
                 "php": ">=5.3.2",
                 "symfony/doctrine-bridge": "~2.2",
                 "symfony/framework-bundle": "~2.2"
             },
             "require-dev": {
-                "doctrine/orm": "~2.2",
+                "doctrine/orm": "~2.3",
                 "symfony/validator": "~2.2",
-                "symfony/yaml": "~2.2"
+                "symfony/yaml": "~2.2",
+                "twig/twig": "~1"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
@@ -448,7 +449,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -482,7 +483,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2013-11-25 17:33:45"
+            "time": "2014-02-03 21:03:15"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -660,16 +661,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "a41b02c080114c0de3da4ee9fba61f7d18fae7d0"
+                "reference": "2c31ec4809a28a549bf22d7cb7504add98156cd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/a41b02c080114c0de3da4ee9fba61f7d18fae7d0",
-                "reference": "a41b02c080114c0de3da4ee9fba61f7d18fae7d0",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2c31ec4809a28a549bf22d7cb7504add98156cd6",
+                "reference": "2c31ec4809a28a549bf22d7cb7504add98156cd6",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +728,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-05-11 07:51:12"
+            "time": "2014-02-08 16:28:24"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -799,17 +800,17 @@
         },
         {
             "name": "fsi/admin-bundle",
-            "version": "v1.0.4",
+            "version": "dev-master",
             "target-dir": "FSi/Bundle/AdminBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/admin-bundle.git",
-                "reference": "c83ab3022bfba72788ee0820a2f1aa3ab8ae8560"
+                "reference": "a17d4c623183368d17e8e268ea053718772473d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/admin-bundle/zipball/c83ab3022bfba72788ee0820a2f1aa3ab8ae8560",
-                "reference": "c83ab3022bfba72788ee0820a2f1aa3ab8ae8560",
+                "url": "https://api.github.com/repos/fsi-open/admin-bundle/zipball/a17d4c623183368d17e8e268ea053718772473d5",
+                "reference": "a17d4c623183368d17e8e268ea053718772473d5",
                 "shasum": ""
             },
             "require": {
@@ -832,13 +833,13 @@
                 "behat/mink-selenium2-driver": "*",
                 "behat/symfony2-extension": "*@stable",
                 "bossa/phpspec2-expect": "dev-master",
-                "doctrine/doctrine-bundle": "1.2.*@dev",
+                "doctrine/doctrine-bundle": "~1.2@dev",
                 "ext-pdo_sqlite": "*",
                 "fsi/resource-repository-bundle": "1.0.*",
                 "fzaninotto/faker": "1.2.*",
                 "phpspec/phpspec": "2.0.*@dev",
                 "sensiolabs/behat-page-object-extension": "1.0.*@dev",
-                "symfony/class-loader": "2.3.*"
+                "symfony/class-loader": "~2.3"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -869,7 +870,7 @@
                 "fsi",
                 "panel"
             ],
-            "time": "2014-01-03 12:28:57"
+            "time": "2014-02-10 18:57:27"
         },
         {
             "name": "fsi/admin-security-bundle",
@@ -1048,17 +1049,17 @@
         },
         {
             "name": "fsi/datagrid-bundle",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "target-dir": "FSi/Bundle/DataGridBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/datagrid-bundle.git",
-                "reference": "8d166dacdcaede887f8460d3e3fcf3d06bcfcee4"
+                "reference": "e286e0e2df86a363f1c40550e65320da4093715c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/datagrid-bundle/zipball/8d166dacdcaede887f8460d3e3fcf3d06bcfcee4",
-                "reference": "8d166dacdcaede887f8460d3e3fcf3d06bcfcee4",
+                "url": "https://api.github.com/repos/fsi-open/datagrid-bundle/zipball/e286e0e2df86a363f1c40550e65320da4093715c",
+                "reference": "e286e0e2df86a363f1c40550e65320da4093715c",
                 "shasum": ""
             },
             "require": {
@@ -1068,6 +1069,7 @@
                 "twig/twig": "~1.2"
             },
             "require-dev": {
+                "phpunit/phpunit": "3.7.*",
                 "symfony/form": "2.2.*",
                 "symfony/twig-bridge": "2.2.*"
             },
@@ -1103,20 +1105,20 @@
                 "fsi",
                 "symfony"
             ],
-            "time": "2013-12-09 12:27:36"
+            "time": "2014-02-01 14:35:06"
         },
         {
             "name": "fsi/datasource",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/datasource.git",
-                "reference": "1a17cc20ae4527abc36c22561c31bdb63c1b5c2c"
+                "reference": "51388c51698eeda2f2a87246b66ab83a39c12368"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/datasource/zipball/1a17cc20ae4527abc36c22561c31bdb63c1b5c2c",
-                "reference": "1a17cc20ae4527abc36c22561c31bdb63c1b5c2c",
+                "url": "https://api.github.com/repos/fsi-open/datasource/zipball/51388c51698eeda2f2a87246b66ab83a39c12368",
+                "reference": "51388c51698eeda2f2a87246b66ab83a39c12368",
                 "shasum": ""
             },
             "require": {
@@ -1126,8 +1128,8 @@
                 "symfony/options-resolver": "~2.2"
             },
             "require-dev": {
-                "doctrine/collections": "dev-master",
-                "doctrine/orm": "2.3.x-dev",
+                "doctrine/collections": "~1.0",
+                "doctrine/orm": "~2.3",
                 "symfony/doctrine-bridge": "~2.2",
                 "symfony/form": "~2.2",
                 "symfony/http-foundation": "~2.2",
@@ -1165,24 +1167,26 @@
                 "datasource",
                 "fsi"
             ],
-            "time": "2013-12-09 14:10:15"
+            "time": "2014-01-13 11:35:39"
         },
         {
             "name": "fsi/datasource-bundle",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "target-dir": "FSi/Bundle/DataSourceBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/datasource-bundle.git",
-                "reference": "5681fda2cee6c398682bc0caa1d406db9e3f652a"
+                "reference": "bf2f1ba54e7b42f9e4b8eaa0de7efe75a9333069"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/datasource-bundle/zipball/5681fda2cee6c398682bc0caa1d406db9e3f652a",
-                "reference": "5681fda2cee6c398682bc0caa1d406db9e3f652a",
+                "url": "https://api.github.com/repos/fsi-open/datasource-bundle/zipball/bf2f1ba54e7b42f9e4b8eaa0de7efe75a9333069",
+                "reference": "bf2f1ba54e7b42f9e4b8eaa0de7efe75a9333069",
                 "shasum": ""
             },
             "require": {
+                "doctrine/collections": "~1.0",
+                "doctrine/orm": "~2.3",
                 "fsi/datasource": "1.2.*",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": "~2.2",
@@ -1222,20 +1226,20 @@
                 "fsi",
                 "symfony"
             ],
-            "time": "2013-12-09 12:43:59"
+            "time": "2014-01-09 15:29:59"
         },
         {
             "name": "fsi/doctrine-extensions",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/doctrine-extensions.git",
-                "reference": "d7d00fe18d01f0e3b0f852f4e3a1e4346552ce4f"
+                "reference": "39ccff4438e24dbb43a89bb896791e5bddcfee27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/doctrine-extensions/zipball/d7d00fe18d01f0e3b0f852f4e3a1e4346552ce4f",
-                "reference": "d7d00fe18d01f0e3b0f852f4e3a1e4346552ce4f",
+                "url": "https://api.github.com/repos/fsi-open/doctrine-extensions/zipball/39ccff4438e24dbb43a89bb896791e5bddcfee27",
+                "reference": "39ccff4438e24dbb43a89bb896791e5bddcfee27",
                 "shasum": ""
             },
             "require": {
@@ -1282,7 +1286,7 @@
                 "doctrine-extensions",
                 "fsi"
             ],
-            "time": "2013-10-30 09:20:15"
+            "time": "2014-01-10 13:33:25"
         },
         {
             "name": "fsi/doctrine-extensions-bundle",
@@ -1545,21 +1549,21 @@
         },
         {
             "name": "fsi/resource-repository-bundle",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "target-dir": "FSi/Bundle/ResourceRepositoryBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fsi-open/resource-repository-bundle.git",
-                "reference": "72f1c2ae2b078f1a468d3fe99cf214f355357356"
+                "reference": "a175a56245da1c13de4bc826ae570f4260690d52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/resource-repository-bundle/zipball/72f1c2ae2b078f1a468d3fe99cf214f355357356",
-                "reference": "72f1c2ae2b078f1a468d3fe99cf214f355357356",
+                "url": "https://api.github.com/repos/fsi-open/resource-repository-bundle/zipball/a175a56245da1c13de4bc826ae570f4260690d52",
+                "reference": "a175a56245da1c13de4bc826ae570f4260690d52",
                 "shasum": ""
             },
             "require": {
-                "doctrine/doctrine-bundle": "1.2.*@dev",
+                "doctrine/doctrine-bundle": "~1.2@dev",
                 "php": ">=5.3.3",
                 "symfony/event-dispatcher": "~2.2",
                 "symfony/form": "~2.2",
@@ -1605,7 +1609,7 @@
                 "repository",
                 "resource"
             ],
-            "time": "2013-12-11 19:56:27"
+            "time": "2014-01-27 13:59:49"
         },
         {
             "name": "fzaninotto/faker",
@@ -1707,16 +1711,16 @@
         },
         {
             "name": "jdorn/sql-formatter",
-            "version": "v1.2.16",
+            "version": "v1.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "8859d664737492d313c34796731b35eca851b362"
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/8859d664737492d313c34796731b35eca851b362",
-                "reference": "8859d664737492d313c34796731b35eca851b362",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
                 "shasum": ""
             },
             "require": {
@@ -1753,7 +1757,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2013-11-27 22:51:13"
+            "time": "2014-01-12 16:20:24"
         },
         {
             "name": "knplabs/gaufrette",
@@ -2429,20 +2433,21 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.0.0",
+            "version": "v1.2.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783"
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
-                "reference": "cac3fdfb111adbe590155f491594636d45129783",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
                 "shasum": ""
             },
             "require": {
+                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -2472,7 +2477,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:07"
+            "time": "2013-06-03 18:32:58"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -2534,17 +2539,17 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Symfony/Bundle/SwiftmailerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93"
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/f5e5d12629c26a835c7aa1d74e2e041486b92d93",
-                "reference": "f5e5d12629c26a835c7aa1d74e2e041486b92d93",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
+                "reference": "fcefa9dbd5a1ed20547b0f8a2afd5ad6837ea321",
                 "shasum": ""
             },
             "require": {
@@ -2585,20 +2590,20 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2013-08-22 13:32:58"
+            "time": "2013-11-21 12:29:01"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.8",
+            "version": "v2.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "b0b421908d569e5024372ded65857707c409e0f7"
+                "reference": "ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/b0b421908d569e5024372ded65857707c409e0f7",
-                "reference": "b0b421908d569e5024372ded65857707c409e0f7",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74",
+                "reference": "ee1e0f2ef882ccd6a53ff91e5ffc39a22b6a6b74",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2698,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-12-16 14:36:05"
+            "time": "2014-01-05 01:24:54"
         },
         {
             "name": "twig/extensions",
@@ -2796,12 +2801,18 @@
 
     ],
     "aliases": [
-
+        {
+            "alias": "1.0.6",
+            "alias_normalized": "1.0.6.0",
+            "version": "9999999-dev",
+            "package": "fsi/admin-bundle"
+        }
     ],
     "minimum-stability": "stable",
     "stability-flags": {
         "doctrine/doctrine-bundle": 20,
         "fzaninotto/faker": 20,
+        "fsi/admin-bundle": 20,
         "fsi/admin-security-bundle": 20
     },
     "platform": {
