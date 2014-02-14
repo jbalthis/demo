@@ -76,6 +76,11 @@ fsi_doctrine_extensions:
 fsi_admin:
     display_language_switch: true
 
+fsi_gallery:
+    db_driver: orm
+    gallery_class: FSi\Bundle\AdminDemoBundle\Entity\Gallery
+    photo_class: FSi\Bundle\AdminDemoBundle\Entity\Photo
+
 fos_user:
     db_driver: orm
     firewall_name: main
