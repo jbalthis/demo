@@ -1,8 +1,0 @@
-fields:
-  name:
-    type: text
-    comparison: like
-    options:
-      sortable: false
-      form_options:
-        label: demo.admin.news_category.list.name

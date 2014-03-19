@@ -1,26 +1,6 @@
 demo:
   admin:
     page_structure: Structure
-    news:
-      name: News
-      form:
-        photo: Photo (600x200px)
-        category_empty_value: Choose category
-      list:
-        title: Title
-        category: Category
-        created_at: Created at from
-        created_at_to: to
-        visible: Visible
-        actions: Actions
-        creator_email: Creator
-    news_category:
-      name: News Category
-      form:
-        description: Description
-      list:
-        name: Name
-        news_count: News count
     home_page:
       name: Home page
       header: Header

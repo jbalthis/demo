@@ -33,32 +33,14 @@ class LoadNewsData implements FixtureInterface, ContainerAwareInterface, Ordered
     {
         $generator = Factory::create();
         for ($i = 0; $i < 100; $i++) {
-            $imagePath = $generator->image(sys_get_temp_dir(), 800, 600);
             $news = new News();
-            $news->setCreatedAt($generator->dateTime());
-            $news->setCreatorEmail($generator->email());
+            $news->setDate($generator->dateTime());
             $news->setTitle($generator->name());
-            $news->setVisible($generator->boolean());
-            $news->setPhoto(new UploadedFile(
-                $imagePath,
-                basename($imagePath),
-                null,
-                null,
-                null,
-                true
-            ));
-
-            $categories = $manager->getRepository('FSi\\Bundle\\AdminDemoBundle\\Entity\\NewsCategory')
-                ->findAll();
-            shuffle($categories);
-            $category = current($categories);
-
-            $news->setCategory($category);
+            $news->setContent($generator->text());
+            $news->setIntroduction($generator->text());
 
             $manager->persist($news);
             $manager->flush();
-            $manager->clear();
-            unlink($imagePath);
         }
     }
 
