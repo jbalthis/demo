@@ -5,12 +5,6 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="admin_demo_bundle.admin.news" class="FSi\Bundle\AdminDemoBundle\Admin\News">
-            <tag name="admin.element" />
-        </service>
-        <service id="admin_demo_bundle.admin.news_category" class="FSi\Bundle\AdminDemoBundle\Admin\NewsCategory">
-            <tag name="admin.element" />
-        </service>
         <service id="admin_demo_bundle.admin.home_page" class="FSi\Bundle\AdminDemoBundle\Admin\HomePage">
             <tag name="admin.element" alias="demo.admin.page_structure" />
         </service>

@@ -81,6 +81,10 @@ fsi_gallery:
     gallery_class: FSi\Bundle\AdminDemoBundle\Entity\Gallery
     photo_class: FSi\Bundle\AdminDemoBundle\Entity\Photo
 
+fsi_news:
+    db_driver: orm
+    news_class: FSi\Bundle\AdminDemoBundle\Entity\News
+
 fos_user:
     db_driver: orm
     firewall_name: main

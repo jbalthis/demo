@@ -35,6 +35,9 @@ class AppKernel extends Kernel
 
             new FSi\Bundle\GalleryBundle\FSiGalleryBundle(),
             new FSi\Bundle\AdminGalleryBundle\FSiAdminGalleryBundle(),
+
+            new FSi\Bundle\NewsBundle\FSiNewsBundle(),
+            new FSi\Bundle\AdminNewsBundle\FSiAdminNewsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -1,26 +1,6 @@
 demo:
   admin:
     page_structure: Struktura
-    news:
-      name: Aktualności
-      form:
-        photo: Zdjęcie (600x200px)
-        category_empty_value: Choose category
-      list:
-        title: Tytuł
-        category: Category
-        created_at: Utworzony od
-        created_at_to: do
-        visible: Widoczny
-        actions: Akcje
-        creator_email: Twórca
-    news_category:
-      name: Kategorie Aktualności
-      form:
-        description: Opis
-      list:
-        name: Nazwa
-        news_count: Ilość newsów
     home_page:
       name: Strona główna
       header: Nagłówek
